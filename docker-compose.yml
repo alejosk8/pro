@@ -12,8 +12,8 @@ services:
         - ./postgresql:/var/lib/postgresql/data
 
   odoo14:
-    image: odoo:14
-    # container_name: odoo14
+    image: odoo:13
+    # container_name: odoo13
     depends_on:
       - db
     ports:
